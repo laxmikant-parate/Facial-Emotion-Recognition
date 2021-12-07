@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FER using CNN</title>
+  </head>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      background-image: linear-gradient(
+        to right,
+        rgb(0, 247, 255),
+        rgb(0, 60, 255)
+      );
+    }
+
+    .container {
+      position: absolute;
+      top: 55px;
+      left: 155px;
+      background-color: #fff;
+      height: 700px;
+      width: 1200px;
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.8);
+    }
+  </style>
+
+  <body>
+    <div class="container">
+      <img
+        id="bg"
+        width="1200px"
+        height="700px"
+        src="{{ url_for('video_feed') }}"
+      />
+    </div>
+  </body>
+</html>
