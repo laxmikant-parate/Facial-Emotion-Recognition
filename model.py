@@ -27,3 +27,7 @@ class FacialExpressionModel():
         set_session(session)
         self.preds = self.loaded_model.predict(img)
         return FacialExpressionModel.EMOTIONS_LIST[np.argmax(self.preds)]
+
+
+[0.2, 0.3, 0.8, 0.3, 0.5, 0.7, 0.4]
+

@@ -11,7 +11,7 @@ all_emo = ["Angry", "Disgust", "Fear", "Happy", "Neutral", "Sad", "Suprise"]
 
 class VideoCamera(object):
     def __init__(self):
-        self.video = cv2.VideoCapture(0)
+        self.video = cv2.VideoCapture("Produce.avi")
 
     def __del__(self):
         self.video.release()
@@ -31,3 +31,4 @@ class VideoCamera(object):
 
         _, jpeg = cv2.imencode('.jpg', fr)
         return jpeg.tobytes()
+
