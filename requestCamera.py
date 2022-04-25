@@ -12,7 +12,7 @@ all_emo = ["Angry", "Disgust", "Fear", "Happy", "Neutral", "Sad", "Suprise"]
 
 class VideoCamera(object):
     def __init__(self):
-        self.video = cv2.VideoCapture(0)
+        self.video = cv2.VideoCapture('AI_SCE/dhoni.jpg')
 
     def __del__(self):
         self.video.release()
